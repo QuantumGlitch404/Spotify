@@ -114,7 +114,7 @@ async function displayAlbums() {
             console.log(response);
             let artistlist = document.querySelector(".artists-list");
             artistlist.innerHTML = artistlist.innerHTML + `<div data-folder="${folder}" class="artist card-filter">
-                        <img src="/SpotifySongs/${folder}/songimg.jpg" alt="">
+                        <img src="SpotifySongs/${folder}/songimg.jpg" alt="">
                         <a class="art-link" href="#"><span class="name">${response.title}</span></a>
                         <span class="role">${response.description}</span>
                     </div>`
