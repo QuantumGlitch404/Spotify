@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scrollbar.js"></script>
+    <script src="js/songs3.js"></script>
+</head>
+
+<body>
+
+    <!-- -------------------------------------------------Header - Nav Bar--------------------------------------- -->
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <svg role="img" viewBox="0 -2 24 26" aria-label="Spotify" width="32" height="32">
+                    <title>Spotify</title>
+                    <path
+                        d="M13.427.01C6.805-.253 1.224 4.902.961 11.524.698 18.147 5.853 23.728 12.476 23.99c6.622.263 12.203-4.892 12.466-11.514S20.049.272 13.427.01m5.066 17.579a.717.717 0 0 1-.977.268 14.4 14.4 0 0 0-5.138-1.747 14.4 14.4 0 0 0-5.42.263.717.717 0 0 1-.338-1.392c1.95-.474 3.955-.571 5.958-.29 2.003.282 3.903.928 5.647 1.92a.717.717 0 0 1 .268.978m1.577-3.15a.93.93 0 0 1-1.262.376 17.7 17.7 0 0 0-5.972-1.96 17.7 17.7 0 0 0-6.281.238.93.93 0 0 1-1.11-.71.93.93 0 0 1 .71-1.11 19.5 19.5 0 0 1 6.94-.262 19.5 19.5 0 0 1 6.599 2.165c.452.245.62.81.376 1.263m1.748-3.551a1.147 1.147 0 0 1-1.546.488 21.4 21.4 0 0 0-6.918-2.208 21.4 21.4 0 0 0-7.259.215 1.146 1.146 0 0 1-.456-2.246 23.7 23.7 0 0 1 8.034-.24 23.7 23.7 0 0 1 7.657 2.445c.561.292.78.984.488 1.546"
+                        fill="#FFFFFF"></path>
+                </svg>
+            </div>
+            <div class="search-bar">
+
+                <button class="home-icon home-btn-filter" title="Home">
+                    <svg width="20" height="20" viewBox="-2 -3 28 28" aria-hidden="true">
+                        <path
+                            d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="search-input search-filter" title="Search Bar">
+                    <div class="search-icon">
+                        <svg viewBox="1 -7 35 35" width="25" height="25">
+                            <path
+                                d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z"
+                                fill="#FFFFFF">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <input type="search" placeholder="What do you want to play?" />
+                </div>
+            </div>
+            <div class="auth-buttons">
+                <button class="signup-btn sign-log-filter">Sign up</button>
+                <button class="login-btn sign-log-filter">Log in</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- --------------------------------------------------Left-Container----------------------------------------------- -->
+
+    <!-- <div class="container">
+        <div class="left flex">
+            <div class="library">
+                <div class="lib-logo">
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" class="Svg-sc-ytk21e-0 bneLcE"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z" fill="#FFFFFF"></path></svg>
+                </div>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div> -->
+
+    <div class="container">
+
+        <div class="left-wrapper">
+
+            <div class="left-song-cont">
+
+                <div class="song-cont-in1">
+                    <p class="song-cont-in2"> Your Songs </p>
+                </div>
+
+                <hr class="hr1">
+
+                <div class="song-list">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="left-container">
+                <div class="header">
+                    <div class="logo-section">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20"
+                            height="20" class="Svg-sc-ytk21e-0 bneLcE">
+                            <path
+                                d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                                fill="#FFFFFF"></path>
+                        </svg>
+                        <span>Your Library</span>
+                    </div>
+                    <div class="playlist-section">
+                        <h3>Create your first playlist</h3>
+                        <p>It's easy, we'll help you</p>
+                        <button class="left-button">Create playlist</button>
+                    </div>
+                    <div class="podcast-section">
+                        <h3>Let's find some podcasts to follow</h3>
+                        <p>We'll keep you updated on new episodes</p>
+                        <button class="left-button">Browse podcast</button>
+                    </div>
+                </div>
+                <div class="footer-left">
+                    <a href="#">Legal</a>
+                    <a href="#">Safety & Privacy Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">About Ads</a>
+                    <a href="#">Accessibility</a>
+
+                    <div class="language">
+                        <button class="left-button">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0.5 -3 15 19.5" width="15"
+                                height="15" class="Svg-sc-ytk21e-0 dYnaPI">
+                                <path
+                                    d="M8.152 16H8a8 8 0 1 1 .152 0zm-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296zM4.877 7.25c.062-1.771.34-3.386.773-4.624.099-.284.208-.554.329-.806a6.507 6.507 0 0 0-4.436 5.43h3.334zm-3.334 1.5a6.507 6.507 0 0 0 4.436 5.43 7.974 7.974 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624H1.543zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129H6.378zm5.048 0c-.061 1.771-.339 3.386-.772 4.624-.082.235-.171.46-.268.674a6.506 6.506 0 0 0 4.071-5.298h-3.03zm3.031-1.5a6.507 6.507 0 0 0-4.071-5.298c.097.214.186.44.268.674.433 1.238.711 2.853.772 4.624h3.031z">
+                                </path>
+                            </svg>English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------------------------------------------Right-Container------------------------------------------- -->
+
+        <div class="right">
+            <div class="popular-artists">
+                <div class="section-header">
+                    <h2>Popular artists</h2>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="artists-list">
+                    <!-- <div data-folder="ksong" class="artist card-filter">
+                        <img src="mercedes.jpg" alt="Pritam">
+                        <a class="art-link" href="#"><span class="name">Pritam</span></a>
+                        <span class="role">Artist</span>
+                    </div>
+                    <div data-folder="esong" class="artist card-filter">
+                        <img src="mercedes.jpg" alt="Arijit Singh">
+                        <a class="art-link" href="#"><span class="name">Arijit Singh</span></a>
+                        <span class="role">Artist</span>
+                    </div>
+                    <div class="artist card-filter">
+                        <img src="https://via.placeholder.com/120" alt="Sachin-Jigar">
+                        <a class="art-link" href="#"><span class="name">Sachin-Jigar</span></a>
+                        <span class="role">Artist</span>
+                    </div>
+                    <div class="artist card-filter">
+                        <img src="https://via.placeholder.com/120" alt="A.R. Rahman">
+                        <a class="art-link" href="#"><span class="name">A.R. Rahman</span></a>
+                        <span class="role">Artist</span>
+                    </div>
+                    <div class="artist card-filter">
+                        <img src="https://via.placeholder.com/120" alt="Vishal-Shekhar">
+                        <a class="art-link" href="#"><span class="name">Vishal-Shekhar</span></a>
+                        <span class="role">Artist</span>
+                    </div>
+                    <div class="artist card-filter">
+                        <img src="https://via.placeholder.com/120" alt="Vishal-Shekhar">
+                        <a class="art-link" href="#"><span class="name">Vishal-Shekhar</span></a>
+                        <span class="role">Artist</span>
+                    </div> -->
+
+                </div>
+            </div>
+
+            <hr class="hr1">
+            <!-- <div class="popular-albums">
+                <div class="section-header">
+                    <h2>Popular albums and singles</h2>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="albums-list">
+                    <div class="album card-filter">
+                        <img src="mercedes.jpg" alt="GLORY">
+                        <a class="art-link" href="#"><span class="name">GLORY</span></a>
+                        <a class="art-link" href="#"><span class="artist-name">Yo Yo Honey Singh</span></a>
+                    </div>
+                    <div class="album card-filter">
+                        <img src="https://via.placeholder.com/140" alt="Aashiqui 2">
+                        <a class="art-link" href="#"><span class="name">Aashiqui 2</span></a>
+                        <a class="art-link" href="#"><span class="artist-name">Mithoon, Ankit</span></a>
+                    </div>
+                    <div class="album card-filter">
+                        <img src="https://via.placeholder.com/140" alt="Patandar">
+                        <a class="art-link" href="#"><span class="name">Patandar</span></a>
+                        <a class="art-link" href="#"><span class="artist-name">Arjan Dhillon</span></a>
+                    </div>
+                    <div class="album card-filter">
+                        <img src="https://via.placeholder.com/140" alt="Jo Tum Mere Ho">
+                        <a class="art-link" href="#"><span class="name">Jo Tum Mere Ho</span></a>
+                        <a class="art-link" href="#"><span class="artist-name">Anuv Jain</span></a>
+                    </div>
+                    <div class="album card-filter">
+                        <img src="https://via.placeholder.com/140" alt="Making Memories">
+                        <a class="art-link" href="#"><span class="name">Making Memories</span></a>
+                        <a class="art-link" href="#"><span class="artist-name">Karan Aujla</span></a>
+                    </div>
+                    <div class="album card-filter">
+                        <img src="https://via.placeholder.com/140" alt="Making Memories">
+                        <a class="art-link" href="#"><span class="name">Making Memories</span></a>
+                        <a class="art-link" href="#"><span class="artist-name">Karan Aujla</span></a>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="popular-albums">
+                <div class="section-header">
+                    <h2>Popular radio</h2>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="albums-list">
+                    <div class="album card-filter">
+                        <img src="https://via.placeholder.com/140" alt="GLORY">
+                        <a class="art-link" href="#"><span class="name">GLORY</span></a>
+                        <a class="art-link" href="#"><span class="artist-name">With Atif Aslam</span></a>
+                    </div>
+                    <div class="album card-filter">
+                        <img src="https://via.placeholder.com/140" alt="Aashiqui 2">
+                        <a class="art-link" href="#"><span class="name">Aashiqui 2</span></a>
+                        <a class="art-link" href="#"><span class="artist-name">Mithoon, Ankit</span></a>
+                    </div>
+                    <div class="album card-filter">
+                        <img src="https://via.placeholder.com/140" alt="Patandar">
+                        <a class="art-link" href="#"><span class="name">Patandar</span></a>
+                        <a class="art-link" href="#"><span class="artist-name">Arjan Dhillon</span></a>
+                    </div>
+                    <div class="album card-filter">
+                        <img src="https://via.placeholder.com/140" alt="Jo Tum Mere Ho">
+                        <a class="art-link" href="#"><span class="name">Jo Tum Mere Ho</span></a>
+                        <a class="art-link" href="#"><span class="artist-name">Anuv Jain</span></a>
+                    </div>
+                    <div class="album card-filter">
+                        <img src="https://via.placeholder.com/140" alt="Making Memories">
+                        <a class="art-link" href="#"><span class="name">Making Memories</span></a>
+                        <a class="art-link" href="#"><span class="artist-name">Karan Aujla</span></a>
+                    </div>
+                    <div class="album card-filter">
+                        <img src="https://via.placeholder.com/140" alt="Making Memories">
+                        <a class="art-link" href="#"><span class="name">Making Memories</span></a>
+                        <a class="art-link" href="#"><span class="artist-name">Karan Aujla</span></a>
+                    </div>
+                </div>
+            </div> -->
+
+            <footer class="footer">
+                <div class="footer-section">
+                    <h3 class="footer-section__heading">Company</h3>
+                    <a href="#" class="footer-section__link">About</a>
+                    <a href="#" class="footer-section__link">Jobs</a>
+                    <a href="#" class="footer-section__link">For the Record</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-section__heading">Communities</h3>
+                    <a href="#" class="footer-section__link">For Artists</a>
+                    <a href="#" class="footer-section__link">Developers</a>
+                    <a href="#" class="footer-section__link">Advertising</a>
+                    <a href="#" class="footer-section__link">Investors</a>
+                    <a href="#" class="footer-section__link">Vendors</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-section__heading">Useful links</h3>
+                    <a href="#" class="footer-section__link">Support</a>
+                    <a href="#" class="footer-section__link">Free Mobile App</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-section__heading">Spotify Plans</h3>
+                    <a href="#" class="footer-section__link">Premium Individual</a>
+                    <a href="#" class="footer-section__link">Premium Duo</a>
+                    <a href="#" class="footer-section__link">Premium Family</a>
+                    <a href="#" class="footer-section__link">Premium Student</a>
+                    <a href="#" class="footer-section__link">Spotify Free</a>
+                </div>
+
+                <div class="social-icons">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                            <path
+                                d="M12 2.16c3.2 0 3.584.012 4.847.07 1.17.056 1.97.243 2.428.41.525.185.902.405 1.296.8.395.395.615.771.8 1.296.167.457.353 1.256.41 2.428.058 1.262.07 1.646.07 4.847s-.012 3.584-.07 4.847c-.056 1.17-.243 1.97-.41 2.428a3.208 3.208 0 0 1-.8 1.296 3.208 3.208 0 0 1-1.296.8c-.457.167-1.256.353-2.428.41-1.262.058-1.646.07-4.847.07s-3.584-.012-4.847-.07c-1.17-.056-1.97-.243-2.428-.41a3.208 3.208 0 0 1-1.296-.8 3.208 3.208 0 0 1-.8-1.296c-.167-.457-.353-1.256-.41-2.428-.058-1.262-.07-1.646-.07-4.847s.012-3.584.07-4.847c.056-1.17.243-1.97.41-2.428a3.208 3.208 0 0 1 .8-1.296 3.208 3.208 0 0 1 1.296-.8c.457-.167 1.256-.353 2.428-.41C8.416 2.172 8.8 2.16 12 2.16zm0 1.44c-3.168 0-3.548.01-4.793.068-1.032.05-1.575.217-1.94.362a2.18 2.18 0 0 0-.812.526 2.18 2.18 0 0 0-.526.812c-.145.365-.312.908-.362 1.94-.058 1.245-.068 1.625-.068 4.793s.01 3.548.068 4.793c.05 1.032.217 1.575.362 1.94.127.322.29.555.526.812.257.236.49.4.812.526.365.145.908.312 1.94.362 1.245.058 1.625.068 4.793.068s3.548-.01 4.793-.068c1.032-.05 1.575-.217 1.94-.362a2.18 2.18 0 0 0 .812-.526 2.18 2.18 0 0 0 .526-.812c.145-.365.312-.908.362-1.94.058-1.245.068-1.625.068-4.793s-.01-3.548-.068-4.793c-.05-1.032-.217-1.575-.362-1.94a2.18 2.18 0 0 0-.526-.812 2.18 2.18 0 0 0-.812-.526c-.365-.145-.908-.312-1.94-.362-1.245-.058-1.625-.068-4.793-.068zm0 4.32a5.52 5.52 0 1 1 0 11.04 5.52 5.52 0 0 1 0-11.04zm0 1.44a4.08 4.08 0 1 0 0 8.16 4.08 4.08 0 0 0 0-8.16zm6.08-2.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                            <path
+                                d="M22 5.5c-.8.375-1.575.675-2.4.775a4.2 4.2 0 0 0 1.825-2.3c-.8.5-1.7.8-2.675 1a4.1 4.1 0 0 0-7.1 3.75A11.7 11.7 0 0 1 3 4.775a4.125 4.125 0 0 0 1.3 5.5 4.1 4.1 0 0 1-1.875-.5v.05a4.1 4.1 0 0 0 3.3 4 4.25 4.25 0 0 1-1.85.1 4.1 4.1 0 0 0 3.85 2.85 8.3 8.3 0 0 1-5.1 1.75c-.325 0-.65-.025-.975-.05a11.8 11.8 0 0 0 6.375 1.85c7.65 0 11.85-6.35 11.85-11.85 0-.2 0-.4-.025-.6a8.475 8.475 0 0 0 2.1-2.1z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                            <path
+                                d="M22 12a10 10 0 1 0-11.5 9.875v-6.988h-2.1v-2.887h2.1v-2.2c0-2.08 1.23-3.22 3.12-3.22.9 0 1.84.165 1.84.165v2.04h-1.04c-1.03 0-1.36.641-1.36 1.29v1.73h2.285l-.365 2.888h-1.92v6.988A10 10 0 0 0 22 12z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+
+
+            </footer>
+            <div>
+                <hr class="hr1">
+            </div>
+
+            <div class="footer-copyright">
+                &copy; 2024 Spotify AB
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <div class="out-box">
+        <div class="text-content">
+            <p class="ob-para1">Preview of Spotify</p>
+            <p class="ob-para2">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </div>
+        <div>
+            <button class="sign-up">Sign up free</button>
+        </div>
+    </div> -->
+
+    <div class="player">
+        <div class="seekbar">
+            <div class="circle">
+
+            </div>
+        </div>
+
+
+        <div class="info-time">
+            <div class="songinfo">
+
+            </div>
+            <div class="songtime">
+
+            </div>
+        </div>
+
+        <div class="song-btn">
+            <svg id="previous" viewBox="0 0 24 24" height="35px" width="35px" fill="#181818"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path
+                        d="M20.24 7.22005V16.7901C20.24 18.7501 18.11 19.98 16.41 19L12.26 16.61L8.10996 14.21C6.40996 13.23 6.40996 10.78 8.10996 9.80004L12.26 7.40004L16.41 5.01006C18.11 4.03006 20.24 5.25005 20.24 7.22005Z"
+                        stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M3.76001 18.1801V5.82007" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </g>
+            </svg>
+
+
+
+            <svg id="play" height="35px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <g>
+                        <path
+                            d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30 c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15 C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z">
+                        </path>
+                        <path
+                            d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30 S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+
+
+
+            <svg id="next" viewBox="0 0 24 24" height="35px" width="35px" fill="#181818"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path
+                        d="M3.76001 7.22005V16.7901C3.76001 18.7501 5.89 19.98 7.59 19L11.74 16.61L15.89 14.21C17.59 13.23 17.59 10.78 15.89 9.80004L11.74 7.40004L7.59 5.01006C5.89 4.03006 3.76001 5.25005 3.76001 7.22005Z"
+                        stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M20.24 18.1801V5.82007" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </g>
+            </svg>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
